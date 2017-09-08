@@ -1,0 +1,275 @@
+/* Global Layout Set-up */
+/*STEPS COMPLETED TO PASS PROJECT 8
+  1.added lang to ever html file; (Language)
+  2.checked and adjusted contrast ratio of background vs text; (Design)
+  3. changed p1 to h1 to be relevant (document structure)
+  4. added alt atribute to images and removed alt atribute from pic that have the role of design
+   modified the banner and added pic with no text and replaced the img text with html text(images)
+  5. made links visualy distinct by adding a red bottom border, added alt atribute to links in
+  the footer to describe the links
+  6.added table, added caption and scope
+  7.need to refine the form on the suvey page
+
+
+
+*/
+
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+  color: #3fc380;
+  background: #2d2b30;
+}
+
+/* Link Styles */
+
+a {
+  padding: .3rem;
+  text-decoration: none;
+  color: white;
+
+}
+
+a:hover {
+  color: #999;
+  font-size: 1.3rem;
+}
+
+/* Section Styles */
+
+.main-nav {
+  width: 100%;
+  background: rgba(45, 43, 48, 0.8);
+  min-height: 30px;
+  padding: 10px;
+  position: fixed;
+  text-align: center;
+
+}
+.main-nav a {
+  border-bottom: 3px solid red;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-around;
+  font-weight: 700;
+  list-style-type: none;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.nav .name {
+  display: block;
+  margin-right: auto;
+  color: white;
+  letter-spacing: 5px;
+}
+
+.nav li {
+  padding: 5px 10px 10px 10px;
+}
+
+.nav a {
+  transition: all .5s;
+}
+
+.nav a:hover {
+  color: white
+}
+
+header {
+  text-align: center;
+  background: url('../img/concert02_no_text.jpg') no-repeat top center ;
+  background-size: cover;
+  overflow: hidden;
+  padding-top: 60px;
+  height: 350px;
+}
+.title{
+  margin-top: 50px;
+  font-size: 5rem;
+  color: black;
+}
+.subtitle{
+  color: black;
+  font-size: 2rem;
+}
+
+.tag {
+  color: black;
+  padding: 10px;
+  letter-spacing: 5px;
+}
+
+.name{
+  font-weight: 300;
+}
+
+header .name{
+  font-size: 3em;
+}
+.tagline {
+  font-weight: 600;
+  padding: 20px;
+  text-transform: uppercase;
+  color: #781125
+}
+
+.card {
+  margin: 30px;
+  padding: 20px 40px 40px;
+  text-align: left;
+  border-top: 4px solid #3fc380;
+  clear: both;
+}
+.card:hover {
+  border-color: #96731A;
+}
+
+
+.photo{
+  display: block;
+  width: 200px;
+  height: 0%;
+  margin: 0 auto;
+}
+
+.information{
+  width: 100%;
+  text-align: center;
+  /*display: inline-block;
+  position: absolute;*/
+}
+
+.heading{
+  font-size: 2em;
+  text-transform: uppercase;
+  color: #3fc380;
+  margin-top: 10px;
+}
+
+/* Footer styles */
+
+footer {
+  width: 100%;
+  min-height: 30px;
+  padding: 20px 0 40px 20px;
+}
+
+footer .copyright {
+  top: -8px;
+  font-size: .75em;
+}
+
+footer ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+footer ul li {
+  display: inline-block;
+}
+
+a.social {
+  display: inline-block;
+  margin-left: 5px;
+  width: 30px;
+  height: 30px;
+  background-size: 30px 30px;
+  opacity: .4;
+  transition: all .5s;
+}
+
+a.twitter {
+  background-image: url(../img/twitter-32.png);
+}
+
+a.youtube {
+  background-image: url(../img/youtube-32.png);
+}
+
+a.spotify {
+  background-image: url(../img/spotify-32.png);
+}
+
+a.social:hover {
+  opacity: 1;
+}
+.clearfix {
+  clear: both;
+}
+/*.tabel{
+  margin-left: 50%;
+  border: 1px solid red;
+  display: inline-block;
+}*/
+th{
+  background-color: grey;
+  color: white;
+}
+td{
+  background-color: black;
+}
+td,th{
+  padding: .8rem;
+}
+/* Styles for larger screens */
+@media screen and (min-width: 840px) {
+
+  .flex {
+    display: -ms-flexbox;      /* TWEENER - IE 10 */
+    display: flex;
+    max-width: 1200px;
+    -ms-flex-pack: distribute;
+  }
+
+  header {
+    min-height: 470px;
+  }
+
+  .nav {
+    max-width: 1200px;
+    padding: 0 30px;
+  }
+
+
+  main {
+    padding-top: 20px;
+  }
+
+  main p {
+    line-height: 1.6em;
+  }
+
+  .card{
+    margin: 40px auto;
+    padding: 20px 40px 40px;
+    width: 80%;
+    max-width: 1000px;
+  }
+
+  .photo{
+    width: 30%;
+    margin: 20px 30px;
+  }
+
+  .information{
+    text-align: left;
+  }
+
+  footer {
+    font-size: 1.3em;
+    max-width: 1200px;
+    margin: 40px auto;
+  }
+}

@@ -1,0 +1,70 @@
+/* Survey page styles */
+*{
+  margin: 0;
+  padding: 0;
+}
+.photo{
+  width: 60%;
+  padding: 10px;
+}
+h1{
+  margin-top: 50px;
+  font-size: 5rem;
+  color: black;
+
+
+}
+form {
+  margin: 0 auto;
+  text-align: left;
+  display: inline-block;
+}
+
+.container{
+  text-align: center;
+}
+header p{
+  color: black;
+  margin-top: 20px;
+  font-size: 3rem;
+}
+.newsletter{
+  text-align: center;
+}
+
+fieldset {
+  border: 0;
+}
+label{
+  font-size: 1.2rem;
+  padding: .5rem;
+}
+#favorite-song{
+  height: 3rem;
+  width: 20rem;
+  font-size: 1rem;
+}
+input:focus,
+textarea:focus{
+	transition-property: background-color, border-bottom;
+  transition-duration: .5s;
+  transition-timing-function: ease-out;
+	outline: none;
+  font-size: .8rem;
+  border-radius: 5%;
+}
+
+/************************Styles for larger screens ***************************/
+@media (min-width: 840px) {
+
+  img.photo {
+    width: 40%;
+  }
+
+  .newsletter {
+    text-align: left;
+    margin-top: 6em;
+  }
+
+
+}

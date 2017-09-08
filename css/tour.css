@@ -1,0 +1,25 @@
+/* Tour page styles */
+
+pre {
+  font-family: 'Open Sans', sans-serif;
+}
+.flex{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.heading{
+  display: inline-block;
+  margin: 0;
+}
+.tabel{
+  align-self: auto;
+}
+.pick{
+  width: 40px;
+  height: 0%;
+}
+.tabel h1{
+  font-size: 3rem;
+  padding: 1rem;
+}
