@@ -1,19 +1,3 @@
-/* Global Layout Set-up */
-/*STEPS COMPLETED TO PASS PROJECT 8
-  1.added lang to ever html file; (Language)
-  2.checked and adjusted contrast ratio of background vs text; (Design)
-  3. changed p1 to h1 to be relevant (document structure)
-  4. added alt atribute to images and removed alt atribute from pic that have the role of design
-   modified the banner and added pic with no text and replaced the img text with html text(images)
-  5. made links visualy distinct by adding a red bottom border, added alt atribute to links in
-  the footer to describe the links
-  6.added table, added caption and scope
-  7.need to refine the form on the suvey page
-
-
-
-*/
-
 * {
   box-sizing: border-box;
   margin: 0px;
@@ -208,11 +192,6 @@ a.social:hover {
 .clearfix {
   clear: both;
 }
-/*.tabel{
-  margin-left: 50%;
-  border: 1px solid red;
-  display: inline-block;
-}*/
 th{
   background-color: grey;
   color: white;
